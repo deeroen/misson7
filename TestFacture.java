@@ -18,7 +18,7 @@ public class TestFacture {
         new Article("stage LaTeX", 12.0),
         new Article("installation wifi", 45.22),
         new Article("carte graphique", 119.49),
-        /**/new ArticlePiece(1,pieces[0]),
+        new ArticlePiece(1,pieces[0]),
         new ArticlePiece(3,pieces[1]),
         new ArticleReparation(0.75),
         new ArticlePiece(5,pieces[2]),

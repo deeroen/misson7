@@ -8,7 +8,7 @@ public class Facture {
 
     private Article[] articles;
     private String reference;
-    /**/private int numero;
+    private static int numero=1;
 
     /**
      * @pre  reference != null
@@ -17,6 +17,7 @@ public class Facture {
     public Facture(String reference, Article[] articles) {
         this.reference = reference;
         this.articles = articles;
+        numero++;
     }
 
     /**
@@ -34,6 +35,7 @@ public class Facture {
             totalTVA = totalTVA + art.getTVA();
         }
         printTotaux(totalPrix, totalTVA);
+        
     }
 
     /**
@@ -90,7 +92,12 @@ public class Facture {
      * @post Retourne le nombre d'exemplaires de {pce} factures,
      *       en totalisant sur plusieurs articles si necessaire.
      */
-    //public int getNombre(Piece pce) {
-    //	// A COMPLETER
-    //}
+    public int getNombre(Piece pce) {
+        int nbr=0;
+        for(int i =0; i<.length();i++){
+            this.equals(pce)
+        
+        }
+        return nbr;
+    }
 }

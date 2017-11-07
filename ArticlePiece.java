@@ -24,4 +24,31 @@ public class ArticlePiece extends Article
     
     public int getnombre(){
     return this.nbr;}
+    
+    /**
+     * @pre  -
+     * @post retourne la description de cet article.
+     */
+    public String getDescription() {
+        return c.getdescription()+" @ "+c.getprixunit();
+    }
+    
+    /**
+     * @pre  -
+     * @post retourne le prix (HTVA) de cet article.
+     */
+    public double getPrix() {
+        return c.getprixunit()*nbr;
+    }
+    
+    /**
+     * @pre  -
+     * @post retourne la TVA sur cet article.
+     */
+    public double getTVA() {
+        if(c.getTVAred()){
+            return getPrix()*0.06;
+        }
+        else {return getPrix() * 0.21;}
+    }
 }
