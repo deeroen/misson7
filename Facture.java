@@ -44,7 +44,7 @@ public class Facture {
      *       et les tetes de colonnes.
      */
     public void printEntete() {
-        System.out.println("Facture " + reference);
+        System.out.println("Facture No "+numero+" : " + reference);
         System.out.println();
         printBarre();
         System.out.println("| Description                              |  prix HTVA |        TVA |  prix TVAC |");
@@ -94,8 +94,8 @@ public class Facture {
      */
     public int getNombre(Piece pce) {
         int nbr=0;
-        for(int i =0; i<.length();i++){
-            this.equals(pce)
+        for(int i =0; i<articles.length;i++){
+            if(this.equals(pce)){nbr++;}
         
         }
         return nbr;
