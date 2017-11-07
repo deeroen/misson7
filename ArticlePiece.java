@@ -30,7 +30,7 @@ public class ArticlePiece extends Article
      * @post retourne la description de cet article.
      */
     public String getDescription() {
-        return c.getdescription()+" @ "+c.getprixunit();
+        return this.getnombre()+" * "+ c.getdescription()+" @ "+c.getprixunit();
     }
     
     /**

@@ -34,7 +34,7 @@ public class Piece
     {this.description=d;
      this.prixunit=pr;
     }
-    public String getdescription(){
+    public String getDescription(){
         return description;
     }
     public double getprixunit(){
