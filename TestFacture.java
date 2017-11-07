@@ -1,7 +1,7 @@
 /**
  * Classe de test pour la classe Facture
  * 
- * @author Charles Pecheur
+ * @author Dewandre jer
  * @version 27 octobre 2012
  */
 public class TestFacture {

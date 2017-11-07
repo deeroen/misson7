@@ -11,6 +11,7 @@ public class TestFactureInitial {
         new Article("stage LaTeX", 12.0),
         new Article("installation wifi", 45.22),
         new Article("carte graphique", 119.49),
+        new ArticleReparation(0.75),
     };
     
     public static void main(String[] args) {
